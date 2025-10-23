@@ -90,10 +90,13 @@ DATABASES = {
 
 # 🌟 CRITICAL FIX: The absolute path to the directory where collectstatic will gather files.
 # This creates a folder named 'staticfiles' in your project's root directory.
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+# blogmind/settings.py
 
-# The base URL where static files are accessed in the browser (already set)
-STATIC_URL = 'static/'
+# Replace the previous STATIC_URL = 'static/' with this:
+# 🌟 CRITICAL FIX: The base URL must include the repository name.
+STATIC_URL = '/BlogMind_Project/staticfiles/'
+
+# NOTE: The destination folder is STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 # ... (omitted for brevity)
