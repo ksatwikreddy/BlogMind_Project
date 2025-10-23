@@ -3,6 +3,7 @@
 */
 
 /* VARIABLE DEFINITIONS */
+{% load static %}
 html[data-theme="light"],
 :root {
     --primary: #79aec8;
